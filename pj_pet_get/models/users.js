@@ -11,7 +11,7 @@ const User = conn.define('users',{
     },
     email:{
         type: DataTypes.STRING,
-        require: true
+        required: true
     },
     password:{
         type: DataTypes.STRING,
@@ -20,9 +20,10 @@ const User = conn.define('users',{
     image:{
         type: DataTypes.STRING,
     },
-    phone: {
+    phone:{
         type: DataTypes.STRING,
+        required: true
     }
 })
 
-module.exports = User;
+module.exports = User

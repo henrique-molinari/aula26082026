@@ -26,3 +26,5 @@ api.use('/users', userRoutes)
 conn.sync()
     .then(() => { api.listen(3030) }) // Nota: Sua API vai rodar na porta 3030
     .catch(error => { console.info(error) })
+
+
